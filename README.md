@@ -5,7 +5,7 @@ Annunaki Spammer is a official time waster for the scammer Anninaki
 
 ## Installation
 
-Download and use the following command.
+Download and use the following command. Edit the for loop for more or less requests!
 
 ```bash
 node spam.js
