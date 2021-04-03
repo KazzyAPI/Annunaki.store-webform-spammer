@@ -1,9 +1,15 @@
 # Annunaki Spammer
 
 Annunaki Spammer is a official time waster for the scammer Anninaki
+https://anunnaki.store/
+https://discord.gg/mtAKqfK
+https://steamcommunity.com/groups/AnunnakiDesign
+
+His info^^
 
 
-## Installation
+
+## How to use
 
 Download and use the following command. Edit the for loop for more or less requests!
 
