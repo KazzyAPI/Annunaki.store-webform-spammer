@@ -1,6 +1,6 @@
 # Annunaki Spammer
 
-Annunaki Spammer is a official time waster for the scammer Anninaki
+Anunnaki Spammer is a official time waster for the scammer Anninaki
 https://anunnaki.store/
 https://discord.gg/mtAKqfK
 https://steamcommunity.com/groups/AnunnakiDesign
