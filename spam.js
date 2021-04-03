@@ -1,11 +1,13 @@
-      var url = "https://formoid.net/api/push";
-      var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-      var xhr = new XMLHttpRequest();
 /*Change this for loop to what ever you like for now set at 100
 If you have experience with using proxies please let me know <3
 You are probably asking why i made this, and its simply he is 
 a scammer and whats the point in manually spamming him when you can bot it !
 */
+
+
+      var url = "https://formoid.net/api/push";
+      var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+      var xhr = new XMLHttpRequest();
       for(i = 0;i < 100;i++) {
         await new Promise(resolve => setTimeout(resolve, 5000));
         try {
