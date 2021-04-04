@@ -5,26 +5,19 @@ a scammer and whats the point in manually spamming him when you can bot it !
 */
 
 
+      const request = require('request');
+       const fs = require('fs');
       var url = "https://formoid.net/api/push";
-      var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-      var xhr = new XMLHttpRequest();
-      for(i = 0;i < 100;i++) {
-        await new Promise(resolve => setTimeout(resolve, 5000));
+      let proxydata = fs.readFileSync('./proxies.txt', 'utf8');
+      let proxies = proxydata.split("\n");
+      let proxyi = 0;
+      for(i = 0;i < args[0];i++) {
         try {
-xhr.open("POST", url);
-
-xhr.setRequestHeader("Content-Type", "application/json");
-
-xhr.onreadystatechange = function () {
-   if (xhr.readyState === 4) {
-      console.log(xhr.status);
-      console.log(xhr.responseText);
-   }};
-   
      let name = makeid(8);
-     let email = makeid(5) + '@gmail.com';
+     let email = makeid(10) + '@gmail.com';
      let phone = makeid(8);
      let message = makeid(28);
+     
 var data = `{
    "email":"rLjexACbvSx+YW1RGMMUpL4VVpQZKRtljYg3sZHnDgOdJatLcQQi/5C1rjvRXuNsKxEVUe5Z++OUGNJX7Ufy/0RzXe5nZevgBPPxSPmPzIXWmjMduwrsdw/IW2B6WVfu",
    "form":{
@@ -49,8 +42,19 @@ var data = `{
       ]
    }
 }`;
-console.log(`Sending annunaki with the details %s:%s:%s with a dumb message :D`, name, email, phone)
-xhr.send(data);
+
+if(!proxies[proxyi]) {
+   proxyi = 0;
+}
+request.post(url,{form: data,proxy: `http://${proxies[proxyi]}`}, async function (err,res,body) {
+            console.log(body)
+            console.log(`Sending annunaki with the details %s:%s:%s with a dumb message using proxy: %s`, name, email, phone, proxies[proxyi]);
+     
+            proxyi++;
+})
+await new Promise(resolve => setTimeout(resolve, 3000));
+
+
         }
         catch(err) {
           console.log(err)
