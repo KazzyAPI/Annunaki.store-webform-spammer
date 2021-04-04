@@ -19,7 +19,7 @@ node spam.js
 
 ## To-Do
 
-- [x] Proxy Support
+- [x] Proxy Support :heavy_check_mark:
 - [ ]  Multithreading for more requests
 
 ## Contributing
