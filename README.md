@@ -20,7 +20,8 @@ npm install then node spam.js
 ## To-Do
 
 - [x] Proxy Support :heavy_check_mark:
-- [ ]  Multithreading for more requests
+- [x]  Multithreading for more requests :heavy_check_mark:
+- [ ]  Controlling the threads / adding prompts for a more standalone feel
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. If you are experienced with proxies please help out.
