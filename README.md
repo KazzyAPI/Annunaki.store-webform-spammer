@@ -14,7 +14,7 @@ His info^^
 Download and use the following command. Edit the for loop for more or less requests!
 
 ```bash
-node spam.js
+npm install then node spam.js
 ```
 
 ## To-Do
